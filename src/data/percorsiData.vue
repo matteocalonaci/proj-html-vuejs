@@ -26,6 +26,7 @@ export default {
 <template>
     <!-- <img src="../assets/images/client-9-2x.png" alt=""> -->
     <h5>CIAO</h5>
+    <img src="../assets/images/" alt="">
 </template>
 
 <!-- CSS -->

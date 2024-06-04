@@ -18,7 +18,10 @@ export default {
     },
 
     methods: {
-
+        getImg(path) {
+            let risultato = new URL(`../assets/images/${path}`, import.meta.url);
+            return risultato.href;
+        },
     },
 
 
@@ -31,12 +34,15 @@ export default {
 <template>
     <div class="card col-2">
         <div class="img">
-            <img src="../assets/images/simple-home-office-with-tree-PBXRXYB-large-1024x768.jpg">
+            <img :src="getImg(card.image)" alt="">
+
         </div>
 
-        <div class="testo bg-white m-auto ">
+        <div class="testo bg-white m-auto shadow p-3 mb-5 bg-body-tertiary rounded">
             <p class=" text-center p-2">{{ card.data }}</p>
-            <h6 class=" text-center text-black p-2">{{ card.titolo }}</h6>
+
+            <h6 class=" text-center p-2"> <i class="fa-solid fa-circle"></i>{{ card.titolo }}
+            </h6>
         </div>
 
 
@@ -49,21 +55,55 @@ export default {
 img {
     width: 100%;
     border-radius: 0.5rem;
+    box-shadow: 6px 6px 25px 0 rgba(0, 0, 0, .35);
+    text-shadow: 0 0 0 rgba(0, 0, 0, .3);
 
+}
+
+img:hover {
+    width: 30.2rem;
 }
 
 .testo {
     width: 25rem;
     position: absolute;
-    top: 20rem;
+    top: 17rem;
     left: 2.5rem;
-    border: 0.01rem solid black;
     border-radius: 0.5rem;
+    transition-duration: 0.8s;
+    color: black;
+
 }
+
+
+.testo:hover {
+    color: white;
+    background: linear-gradient(to right, #64CE74, #21D8A6);
+    transform: translateY(1rem);
+}
+
 
 .testo p {
     font-size: 0.8rem;
-    color: gray;
     margin-top: 2rem;
+}
+
+.testo p:hover {
+    color: white;
+}
+
+.fa-solid {
+    margin-right: 0.5rem;
+    font-size: 0.5rem;
+    color: rgb(1, 217, 166);
+
+
+
+}
+
+h6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 </style>

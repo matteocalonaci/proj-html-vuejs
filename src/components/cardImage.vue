@@ -7,7 +7,7 @@ export default {
     name: "cardImage",
 
     props: {
-        images: Object
+        img: Object
     },
 
 
@@ -18,7 +18,10 @@ export default {
     },
 
     methods: {
-
+        getImg(path) {
+            let risultato = new URL(`../assets/images/${path}`, import.meta.url);
+            return risultato.href;
+        },
     },
 
 
@@ -31,7 +34,7 @@ export default {
 <template>
 
     <div class="img">
-        <img src="../assets/images/client-1-2x.png" alt="">
+        <img :src="getImg(img.image)" alt="">
 
 
 
@@ -43,7 +46,7 @@ export default {
 <!-- CSS -->
 <style scoped>
 .img {
-    background-color: yellow;
+    height: 7rem;
 
 }
 </style>
