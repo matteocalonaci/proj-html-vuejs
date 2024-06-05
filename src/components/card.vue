@@ -60,9 +60,7 @@ img {
 
 }
 
-img:hover {
-    width: 30.2rem;
-}
+
 
 .testo {
     width: 25rem;
@@ -71,15 +69,8 @@ img:hover {
     left: 2.5rem;
     border-radius: 0.5rem;
     transition-duration: 0.8s;
-    color: black;
+    color: gray;
 
-}
-
-
-.testo:hover {
-    color: white;
-    background: linear-gradient(to right, #64CE74, #21D8A6);
-    transform: translateY(1rem);
 }
 
 
@@ -88,22 +79,39 @@ img:hover {
     margin-top: 2rem;
 }
 
-.testo p:hover {
-    color: white;
-}
-
 .fa-solid {
     margin-right: 0.5rem;
     font-size: 0.5rem;
     color: rgb(1, 217, 166);
-
-
-
 }
 
 h6 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* all'hover sulla card succedono una serie fi cose */
+
+.col-2:hover {
+    .testo {
+        color: white;
+        transition-duration: 1s;
+        background: linear-gradient(to right, #64CE74, #21D8A6);
+        transform: translateY(1rem);
+    }
+
+    .testo p {
+        color: white;
+    }
+
+    .img {
+        transform: scale(1.02);
+    }
+
+    .fa-solid {
+        color: white;
+    }
+
 }
 </style>

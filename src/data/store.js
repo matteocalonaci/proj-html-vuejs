@@ -1,6 +1,8 @@
 import { reactive } from 'vue';
 
 const ilMioOggettone = {
+
+    
 cards:[
     {
         image:"serious-businesswoman-with-documents-talking-on-P9Q6LX6-1024.jpg",
@@ -43,7 +45,7 @@ images:[
 
 info: [
     {
-        image: "../assets/images/cropped-Group-39-2x.png",
+        image: "cropped-Group-39-2x.png",
         didascalia: "While the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees.While the lovely valley teems with vapour around me."
     },
     {
@@ -57,7 +59,8 @@ info: [
         cellulare: "+99(0)101 0000 888"
     },
     {
-        titolo: "LOCATION ON MAP"
+        titolo: "LOCATION ON MAP",
+        image:"map.png"
     }
 ]
 
