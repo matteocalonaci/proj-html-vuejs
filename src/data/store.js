@@ -11,6 +11,7 @@ const ilMioOggettone = {
         'Blog',
         'Contact'
     ],
+
     slidesJumbo: [
         {
             image: 'Group-36-2x.png',
@@ -31,9 +32,41 @@ const ilMioOggettone = {
             text: 'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.Separated they live in Bookmarksgrove.'
         }
     ],
-    
 
-    // FOOTER
+
+
+    // MAIN
+    immagini: [
+        {
+         immagine: "ina-soulis-227104-unsplash-1024x1024.jpg"
+        },
+        {
+         immagine: "sunisa-misa-531163-unsplash-1024x1024.jpg"
+        },
+        {
+         immagine: "355H-1024x1024.jpg"
+        },
+        {
+         immagine: "photo-1448932252197-d19750584e56-1024x1024.jpg"
+        },
+        {
+         immagine: "business-competition-PB366D8-1024x1024.jpg"
+        },
+        {
+         immagine: "cozy-sofa-in-living-room-PQR5AB9-1024x1024.jpg"
+        },
+        {
+         immagine: "aa9a4539-PQGJ7HU-1024x1024.jpg"
+        },
+        {
+         immagine: "cody-davis-253928-unsplash-1024x1024.jpg"
+        },
+        
+     ],
+
+
+
+//    FOOTER 
 cards:[
     {
         image:"serious-businesswoman-with-documents-talking-on-P9Q6LX6-1024.jpg",
@@ -93,39 +126,10 @@ info: [
         titolo: "LOCATION ON MAP",
         image:"map.png"
     }
-]
+],
 
-};
+}
 
-
-immagini: [
-    {
-     immagine: "ina-soulis-227104-unsplash-1024x1024.jpg"
-    },
-    {
-     immagine: "sunisa-misa-531163-unsplash-1024x1024.jpg"
-    },
-    {
-     immagine: "355H-1024x1024.jpg"
-    },
-    {
-     immagine: "photo-1448932252197-d19750584e56-1024x1024.jpg"
-    },
-    {
-     immagine: "business-competition-PB366D8-1024x1024.jpg"
-    },
-    {
-     immagine: "cozy-sofa-in-living-room-PQR5AB9-1024x1024.jpg"
-    },
-    {
-     immagine: "aa9a4539-PQGJ7HU-1024x1024.jpg"
-    },
-    {
-     immagine: "cody-davis-253928-unsplash-1024x1024.jpg"
-    },
-    
- ]
- 
 
 const iMieiDati = reactive(ilMioOggettone);
 

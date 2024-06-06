@@ -8,6 +8,7 @@ export default {
         cardImg
     },
     data() {
+
         return {
 
 
@@ -135,7 +136,7 @@ export default {
             <div class="col-12">
 
                 <cardImg v-for="img in store.immagini" :immagini="img" />
-                <div></div>
+
             </div>
         </div>
 

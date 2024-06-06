@@ -34,10 +34,10 @@ export default {
 </script>
 
 <template>
-  <!-- <PageHeader />
+  <PageHeader />
   <AppJumbo />
   <AppServices />
-  <PageMain /> -->
+  <PageMain />
   <PageFooter />
 </template>
 
