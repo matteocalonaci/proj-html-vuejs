@@ -41,8 +41,8 @@ export default {
         <div class="testo bg-white m-auto shadow p-3 mb-5 bg-body-tertiary rounded">
             <p class=" text-center p-2">{{ card.data }}</p>
 
-            <h6 class=" text-center p-2"> <i class="fa-solid fa-circle"></i>{{ card.titolo }}
-            </h6>
+            <h4 class=" text-center p-2"> <i class="fa-solid fa-circle"></i>{{ card.titolo }}
+            </h4>
         </div>
 
 
@@ -69,7 +69,6 @@ img {
     left: 2.5rem;
     border-radius: 0.5rem;
     transition-duration: 0.8s;
-    color: gray;
 
 }
 
@@ -77,6 +76,8 @@ img {
 .testo p {
     font-size: 0.8rem;
     margin-top: 2rem;
+    color: gray;
+
 }
 
 .fa-solid {
@@ -85,7 +86,7 @@ img {
     color: rgb(1, 217, 166);
 }
 
-h6 {
+h4 {
     display: flex;
     justify-content: center;
     align-items: center;

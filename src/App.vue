@@ -1,5 +1,7 @@
 <script>
 import PageHeader from './components/PageHeader.vue';
+import AppJumbo from './components/AppJumbo.vue';
+import AppServices from './components/AppServices.vue'
 import PageMain from './components/PageMain.vue';
 import PageFooter from './components/PageFooter.vue';
 import store from './data/store.js';
@@ -9,6 +11,8 @@ export default {
     PageHeader,
     PageMain,
     PageFooter,
+    AppJumbo,
+    AppServices,
     store
 
   },
@@ -30,8 +34,10 @@ export default {
 </script>
 
 <template>
-  <PageHeader />
-  <PageMain />
+  <!-- <PageHeader />
+  <AppJumbo />
+  <AppServices />
+  <PageMain /> -->
   <PageFooter />
 </template>
 

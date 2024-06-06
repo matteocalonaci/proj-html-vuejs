@@ -2,7 +2,38 @@ import { reactive } from 'vue';
 
 const ilMioOggettone = {
 
+    // HEADER
+    linkHeader: [
+        'Home',
+        'About',
+        'Service',
+        'Showcase',
+        'Blog',
+        'Contact'
+    ],
+    slidesJumbo: [
+        {
+            image: 'Group-36-2x.png',
+            title: 'We Are a Web Designe ',
+            lastWord: 'Agency',
+            text: 'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.Separated they live in Bookmarksgrove.'
+        },
+        {
+            image: 'Group-40-2x.png',
+            title: 'A Group of Expert ',
+            lastWord: 'Planners',
+            text: 'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.Separated they live in Bookmarksgrove.'
+        },
+        {
+            image: 'Group-35-2x.png',
+            title: 'Focus on your ',
+            lastWord: 'business',
+            text: 'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.Separated they live in Bookmarksgrove.'
+        }
+    ],
     
+
+    // FOOTER
 cards:[
     {
         image:"serious-businesswoman-with-documents-talking-on-P9Q6LX6-1024.jpg",
@@ -65,6 +96,36 @@ info: [
 ]
 
 };
+
+
+immagini: [
+    {
+     immagine: "ina-soulis-227104-unsplash-1024x1024.jpg"
+    },
+    {
+     immagine: "sunisa-misa-531163-unsplash-1024x1024.jpg"
+    },
+    {
+     immagine: "355H-1024x1024.jpg"
+    },
+    {
+     immagine: "photo-1448932252197-d19750584e56-1024x1024.jpg"
+    },
+    {
+     immagine: "business-competition-PB366D8-1024x1024.jpg"
+    },
+    {
+     immagine: "cozy-sofa-in-living-room-PQR5AB9-1024x1024.jpg"
+    },
+    {
+     immagine: "aa9a4539-PQGJ7HU-1024x1024.jpg"
+    },
+    {
+     immagine: "cody-davis-253928-unsplash-1024x1024.jpg"
+    },
+    
+ ]
+ 
 
 const iMieiDati = reactive(ilMioOggettone);
 

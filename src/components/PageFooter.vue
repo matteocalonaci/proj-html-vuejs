@@ -33,7 +33,7 @@ export default {
 <template>
     <footer>
         <!-- titolo -->
-        <h2 class=" text-center p-3">
+        <h2 class=" text-center padding-top">
             Latest News & Our <span class="verdeAcqua">Blog</span>
         </h2>
         <div class="d-flex flex-row centro p-2">
@@ -58,16 +58,16 @@ export default {
         <!-- due carte -->
         <div class="col-12 centro padding-top ">
             <div class="card-center nero">
-                <p class="titolo1 text-center text-white">Are You Ready?</p>
-                <h3 class="titolo2 text-center text-white">Start a New Project</h3>
+                <p class="margin-t text-center text-white">Are You Ready?</p>
+                <h2 class="margin-b text-center text-white">Start a New Project</h2>
                 <div class="input-group radius">
                     <input class="input-text" type="text" placeholder="Enter Your Email Address">
                     <button class="input-btn">SUBMIT</button>
                 </div>
             </div>
             <div class="card-center verde">
-                <p class="titolo1 text-center text-white">What Are You Waiting for?</p>
-                <h3 class="titolo2 text-center text-white">Let's Talk About Work</h3>
+                <p class="margin-t text-center text-white">What Are You Waiting for?</p>
+                <h2 class="margin-b text-center text-white">Let's Talk About Work</h2>
                 <button type="button" class="btn nero btn-lg text-white mt-5">START NOW</button>
             </div>
         </div>
@@ -110,7 +110,7 @@ export default {
 
             <div class="col">
 
-                <h5 class=" text-end"> <b>{{ store.info[2].titolo }}</b> </h5>
+                <h5> <b>{{ store.info[2].titolo }}</b> </h5>
 
                 <div class="d-flex flex-row">
                     <hr class="hr1">
@@ -206,11 +206,6 @@ export default {
 
 
 /* margini e padding */
-
-.bord {
-    border-bottom: 0.2rem solid rgb(1, 217, 166);
-}
-
 .padding-top {
     padding-top: 10rem;
 }
@@ -224,11 +219,11 @@ export default {
 }
 
 
-.titolo1 {
+.margin-t {
     margin-top: 2rem;
 }
 
-.titolo2 {
+.margin-b {
     margin-bottom: 3rem;
 }
 
@@ -263,7 +258,7 @@ export default {
 /* colonne */
 .col-12 {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 }
 
@@ -271,7 +266,7 @@ export default {
     width: calc((100% - 3rem) / 4);
     padding: 1.5rem;
     border: 0.01rem solid white;
-    min-height: 20rem;
+    min-height: 22rem;
 }
 
 .col-icons {
@@ -298,7 +293,7 @@ export default {
 .card-center {
     width: calc((100% - 3rem) / 2);
     border-radius: 0.8rem;
-    height: 20rem;
+    height: 22rem;
     margin: 0.7rem;
     padding: 2rem;
     box-shadow: 6px 6px 25px 0 rgba(0, 0, 0, .35);
@@ -391,5 +386,9 @@ li {
     font-size: 0.8rem;
     color: rgba(255, 255, 255, 0.33);
 
+}
+
+h2 {
+    font-size: 3rem;
 }
 </style>
