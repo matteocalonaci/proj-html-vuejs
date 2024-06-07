@@ -85,6 +85,8 @@ cards:[
     }, 
 ],
 
+
+
 images:[
     {
         image:"client-1-2x.png",
@@ -113,7 +115,7 @@ info: [
         didascalia: "While the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees.While the lovely valley teems with vapour around me."
     },
     {
-        titolo: "QUICK LINKS",
+        titolo: "QUICkLINKS",
         links: ["Careers", "News", "Termd of use", "Privacy Projects", "About", "Contact"]
     },
     {
@@ -127,6 +129,20 @@ info: [
         image:"map.png"
     }
 ],
+
+dueCarte:[
+    {
+        titolo:"Are You Ready?",
+        titolone:"Start a New Project"
+    },
+    {
+        titolo:"What Are You Waiting for?",
+        titolone:"Let's Talk About Work"
+    }
+    
+]
+
+
 
 }
 

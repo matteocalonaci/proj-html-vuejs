@@ -60,7 +60,7 @@ export default {
 </script>
 
 <template>
-    <div class="container m-0 d-flex flex-row justify-content-between">
+    <div class="container padding-t m-0 d-flex flex-row justify-content-between">
         <div class="row">
             <div class="col-6">
                 <div class="imgPerson1 shadow"></div>
@@ -151,9 +151,9 @@ export default {
 
 
 
-    <div class="container-fluis m-0 mt-5">
-        <div class="row" @click="startAnimations">
-            <div class="col-6">
+    <div class="container-fluid m-0 mt-5">
+        <div class="col-12" @click="startAnimations">
+            <div class="col-6 p-3">
 
                 <div class="cardGreen2 ms-5 shadow">
 
@@ -182,8 +182,8 @@ export default {
                 <div class="imgPerson3 ms-5 shadow"></div>
 
 
-                <div class="col-6">
-                    <div class="containerWhite shadow">
+                <div class="col-4">
+                    <div class="containerWhite shadow p-3">
                         <h1 class="ms-5" style="font-size: 3rem;">We <span style="color: #00D9A6;">Love</span> What</h1>
                         <h1 class="ms-5" style="font-size: 3rem;">We Do</h1>
 
@@ -223,9 +223,9 @@ export default {
         <div class="row" style="margin-top: 20rem;">
 
             <div class="col-5">
-                <h1 style="font-size: 4.5rem;">With <span style="color: #00D9A6;">Live Chat</span>
+                <h2 style="font-size: 4.5rem;">With <span style="color: #00D9A6;">Live Chat</span>
                     <span style="color: #00D9A6;"> 24/7</span> Support
-                </h1>
+                </h2>
 
                 <div class="d-flex flex-row ">
                     <hr class="hr1">
@@ -241,86 +241,94 @@ export default {
             </div>
 
 
-            <!-- ----CARD BLACK----- -->
-            <div class="col-2 cardBlack p-0 shadow">
+            <div class="col-7 d-flex">
+                <!-- ----CARD BLACK----- -->
+                <div class="col-2 card cardBlack p-0 shadow">
 
-                <div class="mt-3" style="width: 100%; height: auto; background-color: white;">
-                    <div class="d-flex flex-column justify-content-center align-items-center">
-                        <h2>DESIGNING</h2>
-                        <p>All Designs</p>
+                    <div class="mt-3" style="width: 100%; height: auto; background-color: white;">
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <h3>DESIGNING</h3>
+                            <p>All Designs</p>
+                        </div>
+                    </div>
+
+                    <p class="text-white d-flex justify-content-center align-items-center ">
+                        <span style="font-size: 2.5rem;">$10</span> /Design
+                    </p>
+
+                    <div class="mt-3 rounded-bottom" style="width: 100%; height: 10rem; background-color: white;">
+                        <div class="li-container text-center">
+                            <ul style="list-style: none; font-size: 0.9rem;">
+                                <li class="mt-2"> <i class="fa-solid fa-check text-success"></i> Creative Design Enabled
+                                </li>
+                                <li class="mt-2"> <i class="fa-solid fa-check text-success"></i> Vibrant Color Usage
+                                </li>
+                                <li class="mt-2"> <i class="fa-solid fa-check text-success"></i> Eye Catching Design
+                                </li>
+                                <li class="mt-2"> <i class="fa-solid fa-check text-success"></i> Extreme Typography</li>
+                                <li class="mt-2"> <i class="fa-solid fa-check text-success"></i> Exceptional Design</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
-                <p class="text-white d-flex justify-content-center align-items-center ">
-                    <span style="font-size: 2.5rem;">$10</span> /Design
-                </p>
+                <!------- CARD GREEN----- -->
+                <div class="col-2 card cardGreen3 shadow">
 
-                <div class="mt-3 rounded-bottom" style="width: 100%; height: 10rem; background-color: white;">
-                    <div>
-                        <ul style="list-style: none; font-size: 0.9rem;">
-                            <li class="mt-2"> <i class="fa-solid fa-check text-success"></i> Creative Design Enabled
-                            </li>
-                            <li class="mt-2"> <i class="fa-solid fa-check text-success"></i> Vibrant Color Usage</li>
-                            <li class="mt-2"> <i class="fa-solid fa-check text-success"></i> Eye Catching Design</li>
-                            <li class="mt-2"> <i class="fa-solid fa-check text-success"></i> Extreme Typography</li>
-                            <li class="mt-2"> <i class="fa-solid fa-check text-success"></i> Exceptional Design</li>
-                        </ul>
+                    <div class="mt-3" style="width: 100%; height: auto; background-color: white;">
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <h3>DEVELOPMENT</h3>
+                            <p>WordPress project</p>
+                        </div>
                     </div>
-                </div>
-            </div>
 
-            <!------- CARD GREEN----- -->
-            <div class="col-2 cardGreen3 p-0 shadow ms-4">
+                    <p class="text-white d-flex justify-content-center align-items-center ">
+                        <span style="font-size: 2.5rem;">$15</span> /Design
+                    </p>
 
-                <div class="mt-3" style="width: 100%; height: auto; background-color: white;">
-                    <div class="d-flex flex-column justify-content-center align-items-center">
-                        <h2>DEVELOPMENT</h2>
-                        <p>WordPress project</p>
-                    </div>
-                </div>
-
-                <p class="text-white d-flex justify-content-center align-items-center ">
-                    <span style="font-size: 2.5rem;">$15</span> /Design
-                </p>
-
-                <div class="mt-3 rounded-bottom" style="width: 100%; height: 10rem; background-color: white;">
-                    <div>
-                        <ul style="list-style: none; font-size: 0.9rem;">
-                            <li class="mt-2"> <i class="fa-solid fa-check text-success"></i> Creative Design Enabled
-                            </li>
-                            <li class="mt-2"> <i class="fa-solid fa-check text-success"></i> Vibrant Color Usage</li>
-                            <li class="mt-2"> <i class="fa-solid fa-check text-success"></i> Eye Catching Design</li>
-                            <li class="mt-2"> <i class="fa-solid fa-check text-success"></i> Extreme Typography</li>
-                            <li class="mt-2"> <i class="fa-solid fa-check text-success"></i> Exceptional Design</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!------- CARD BLACK----- -->
-            <div class="col-2 cardBlack p-0 shadow ms-4">
-
-                <div class="mt-3" style="width: 100%; height: auto; background-color: white;">
-                    <div class="d-flex flex-column justify-content-center align-items-center">
-                        <h2>SEO</h2>
-                        <p>Web Products</p>
+                    <div class="mt-3 rounded-bottom" style="width: 100%; height: 10rem; background-color: white;">
+                        <div class="text-center">
+                            <ul style="list-style: none; font-size: 0.9rem;">
+                                <li class="mt-2"> <i class="fa-solid fa-check text-success"></i> Creative Design Enabled
+                                </li>
+                                <li class="mt-2"> <i class="fa-solid fa-check text-success"></i> Vibrant Color Usage
+                                </li>
+                                <li class="mt-2"> <i class="fa-solid fa-check text-success"></i> Eye Catching Design
+                                </li>
+                                <li class="mt-2"> <i class="fa-solid fa-check text-success"></i> Extreme Typography</li>
+                                <li class="mt-2"> <i class="fa-solid fa-check text-success"></i> Exceptional Design</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
-                <p class="text-white d-flex justify-content-center align-items-center ">
-                    <span style="font-size: 2.5rem;">$10</span> /Product
-                </p>
+                <!------- CARD BLACK----- -->
+                <div class="col-2 card cardBlack p-0 shadow ms-4">
 
-                <div class="mt-3 rounded-bottom" style="width: 100%; height: 10rem; background-color: white;">
-                    <div>
-                        <ul style="list-style: none; font-size: 0.9rem;">
-                            <li class="mt-2"> <i class="fa-solid fa-check text-success"></i> Creative Design Enabled
-                            </li>
-                            <li class="mt-2"> <i class="fa-solid fa-check text-success"></i> Vibrant Color Usage</li>
-                            <li class="mt-2"> <i class="fa-solid fa-check text-success"></i> Eye Catching Design</li>
-                            <li class="mt-2"> <i class="fa-solid fa-check text-success"></i> Extreme Typography</li>
-                            <li class="mt-2"> <i class="fa-solid fa-check text-success"></i> Exceptional Design</li>
-                        </ul>
+                    <div class="mt-3" style="width: 100%; height: auto; background-color: white;">
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <h3>SEO</h3>
+                            <p>Web Products</p>
+                        </div>
+                    </div>
+
+                    <p class="text-white d-flex justify-content-center align-items-center ">
+                        <span style="font-size: 2.5rem;">$10</span> /Product
+                    </p>
+
+                    <div class="mt-3 rounded-bottom" style="width: 100%; height: 10rem; background-color: white;">
+                        <div class="text-center">
+                            <ul style="list-style: none; font-size: 0.9rem;">
+                                <li class="mt-2"> <i class="fa-solid fa-check text-success"></i> Creative Design Enabled
+                                </li>
+                                <li class="mt-2"> <i class="fa-solid fa-check text-success"></i> Vibrant Color Usage
+                                </li>
+                                <li class="mt-2"> <i class="fa-solid fa-check text-success"></i> Eye Catching Design
+                                </li>
+                                <li class="mt-2"> <i class="fa-solid fa-check text-success"></i> Extreme Typography</li>
+                                <li class="mt-2"> <i class="fa-solid fa-check text-success"></i> Exceptional Design</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -338,8 +346,9 @@ export default {
                 <div class="backBlack"></div>
 
                 <div class="d-flex flex-column justify-content-center align-items-center" style="margin-top: -40rem;">
-                    <i class="fa-solid fa-quote-left" style="font-size: 5rem; color: #00D9A6;"></i>
-                    <p class="mt-5" style="color: white; font-size: 2rem; width: 900px;">When it comes to barbequing,
+                    <i class="fa-solid fa-quote-left mt-3" style="font-size: 3rem; color: #00D9A6;"></i>
+                    <p class="mt-5" style="color: white; font-size: 1.5rem; font-style: oblique ; width: 900px;">When it
+                        comes to barbequing,
                         there are
                         two main
                         schools of thought
@@ -350,7 +359,7 @@ export default {
 
                     <div class="imgClient shadow2 mt-5"></div>
 
-                    <h2 class="mt-5" style="color: #00D9A6;">LISSA DURBIN</h2>
+                    <h3 class="mt-5" style="color: #00D9A6;">LISSA DURBIN</h3>
 
                     <p class="text-white mt-1" style="font-size: 1.5rem;">Client</p>
 
@@ -360,34 +369,20 @@ export default {
     </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </template>
 
-<style></style>
+<style scoped>
+.card {
+    margin: 0.5rem;
+    width: calc((100% - 3rem) / 3);
+    border: none;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+.padding-t {
+    padding-top: 30rem;
+}
+</style>
